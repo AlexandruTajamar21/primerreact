@@ -1,18 +1,13 @@
 function Saludo(props){
     var dato = "bienvenido a clase"
-    // var nombre = props.nombre;
-    // var edad = props.edad;
 
-    const {nombre, edad} = props;
-
-    const miMetodo=()=>{
-        //Haz algo  
-    }
+    //INVENTAMOS UN METODO DE VARIABLE
+    //QUE ES UN METODO PARA LLAMAR A ALGUNA ACCION QUE TENGAMOS EN EL PADRE
+    const {nombre, edad, metodoPadre} = props;
 
     return (
         <div className="App">
-            <h1> Saludando a {nombre} de {edad}</h1>
-            <h2> {dato}</h2>
+            <button onClick={() => metodoPadre(" el hijo un saludo" + props.nombre + " de " + props.edad + " años")}>Llamar al Padre</button>
         </div>
     );
 }

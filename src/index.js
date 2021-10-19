@@ -5,12 +5,12 @@ import App from './components/App/App';
 import reportWebVitals from './reportWebVitals';
 import Saludo from './components/Saludo/Saludo';
 import Metodos from './components/Metodos/Metodos';
+import SumaNumeros from './components/SumaNumeros/SumaNumeros'
+import Padre from './components/Padre/Padre';
 
 ReactDOM.render(
-  <div>
-    <Metodos></Metodos>
-    <Saludo nombre ="Alumno" edad="23"/>
-    <Saludo nombre ="Lucia" edad="18"/>
+  <div className="App">
+    <Padre/>
   </div>,
   document.getElementById('root')
 );
